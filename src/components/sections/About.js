@@ -17,7 +17,7 @@ const About = () => {
             <div className="w-20 h-1 bg-primary rounded"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pl-10 pr-10">
             <div className="order-2 md:order-1">
               <h3 className="text-2xl font-bold mb-4">
                 Software Engineer & UI/UX Designer

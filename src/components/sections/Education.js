@@ -10,7 +10,8 @@ const Education = () => {
       institution: "Al-Baath University",
       location: "Syria",
       duration: "2017 - 2022",
-      icon: <FaGraduationCap className="text-white text-xl" />,
+      icon: <FaGraduationCap className="text-white text-2xl" />,
+      position: "left",
     },
     {
       id: 2,
@@ -18,7 +19,8 @@ const Education = () => {
       institution: "Syrian Virtual University",
       location: "Syria",
       duration: "October 2023 – Present",
-      icon: <FaGraduationCap className="text-white text-xl" />,
+      icon: <FaGraduationCap className="text-white text-2xl" />,
+      position: "right",
     },
   ];
 
@@ -36,52 +38,50 @@ const Education = () => {
             <div className="w-20 h-1 bg-primary rounded"></div>
           </div>
 
-          <div className="max-w-3xl mx-auto">
-            {educationData.map((item, index) => (
-              <div key={item.id} className="mb-8 relative pl-8 md:pl-0">
-                {/* Timeline for medium and larger screens only */}
-                {index !== educationData.length - 1 && (
-                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200 dark:bg-gray-700"></div>
-                )}
+          {/* Timeline container */}
+          <div className="relative max-w-3xl mx-auto">
+            {/* Vertical line for desktop, left-aligned on mobile */}
+            <div className="absolute left-6 md:left-1/2 md:-translate-x-1/2 w-1 bg-gray-200 dark:bg-gray-700 h-full z-0"></div>
 
+            {educationData.map((item, index) => (
+              <div
+                key={item.id}
+                className={`relative flex flex-col md:flex-row items-center mb-16 ${
+                  item.position === "left"
+                    ? "md:flex-row-reverse"
+                    : "md:flex-row"
+                }`}
+              >
+                {/* Content box */}
                 <div
-                  className={`flex flex-col md:flex-row ${
-                    index % 2 === 0 ? "md:flex-row-reverse" : ""
+                  className={`bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md w-full md:w-5/12 ${
+                    item.position === "right" ? "md:ml-auto" : "md:mr-auto"
                   }`}
                 >
-                  {/* Timeline dot for desktop */}
-                  <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center">
-                    <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center z-10">
-                      {item.icon}
-                    </div>
+                  <h3 className="text-xl font-semibold mb-4">{item.degree}</h3>
+                  <div className="flex items-center mb-2 text-gray-600 dark:text-gray-300">
+                    <FaUniversity className="mr-2 flex-shrink-0" />
+                    <span>
+                      {item.institution}, {item.location}
+                    </span>
                   </div>
-
-                  {/* Mobile timeline dot */}
-                  <div className="md:hidden absolute left-0 top-0">
-                    <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                      {item.icon}
-                    </div>
+                  <div className="flex items-center text-gray-600 dark:text-gray-300">
+                    <FaCalendarAlt className="mr-2 flex-shrink-0" />
+                    <span>{item.duration}</span>
                   </div>
+                </div>
 
-                  <div
-                    className={`md:w-1/2 ${
-                      index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"
-                    }`}
+                {/* Timeline dot (adjusted only for mobile) */}
+                <div className="absolute z-10 top-[-1.5rem] left-6 md:left-1/2 md:-translate-x-1/2 md:top-1/2 md:-translate-y-1/2">
+                  <motion.div
+                    className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-md border-2 border-white dark:border-gray-800"
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{ duration: 0.3 }}
+                    viewport={{ once: true }}
                   >
-                    <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md relative overflow-hidden">
-                      <h3 className="text-xl font-bold mb-5">{item.degree}</h3>
-                      <div className="flex items-center mb-2 text-gray-600 dark:text-gray-300">
-                        <FaUniversity className="mr-2 flex-shrink-0" />
-                        <span>
-                          {item.institution}, {item.location}
-                        </span>
-                      </div>
-                      <div className="flex items-center text-gray-600 dark:text-gray-300">
-                        <FaCalendarAlt className="mr-2 flex-shrink-0" />
-                        <span>{item.duration}</span>
-                      </div>
-                    </div>
-                  </div>
+                    {item.icon}
+                  </motion.div>
                 </div>
               </div>
             ))}
