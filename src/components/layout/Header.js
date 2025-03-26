@@ -14,7 +14,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <div className="text-2xl font-bold text-primary">
-            <Link to="/">Mohammad Mohammad</Link>
+            <Link to="/">M.Mohammad</Link>
           </div>
           
           {/* Desktop Navigation */}
