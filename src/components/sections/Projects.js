@@ -22,6 +22,7 @@ import PortfolioDesignUI from "../../assets/PortfolioDesignUI.png";
 import OnlineCoursesApp from "../../assets/OnlineCoursesApp.png";
 import DesignerPortfolio from "../../assets/DesignerPortfolio.png";
 import DribbleDesignersSpace from "../../assets/DribbleDesignersSpace.png";
+import MobileStore from "../../assets/MobileStore.png"
 
 const Projects = () => {
   const [filter, setFilter] = useState("all");
@@ -29,6 +30,14 @@ const Projects = () => {
   const projectsData = [
     {
       id: 1,
+      title: "Mobile Online Store",
+      description: "Modern and fasional webstore for Smart Mobile Phones",
+      link: "https://mobilewebstore.vercel.app/",
+      category: "ecommerce",
+      image: MobileStore,
+    },
+    {
+      id: 2,
       title: "Technical-News Modern Blog",
       description: "A dynamic blog delivering technical news and insights.",
       link: "https://tech-news-modernblog.vercel.app/",
@@ -36,7 +45,7 @@ const Projects = () => {
       image: TechNews,
     },
     {
-      id: 2,
+      id: 3,
       title: "Employee-Task-Management-Platform",
       description: "A platform for managing employee tasks and collaboration.",
       link: "https://emplyee-task-managment-platform.vercel.app/",
@@ -44,7 +53,7 @@ const Projects = () => {
       image: TaskManagment,
     },
     {
-      id: 3,
+      id: 4,
       title: "ExpenseTrack",
       description: "An intuitive app for tracking personal finances.",
       link: "https://modern-expensetrack.vercel.app/",
@@ -52,7 +61,7 @@ const Projects = () => {
       image: ExpenseTrack,
     },
     {
-      id: 4,
+      id: 5,
       title: "Stolen Bikes Investigation | SBI",
       description: "A platform to report and track stolen bikes.",
       link: "https://stolen-bikes-investigasion-sbi.vercel.app/",
@@ -60,7 +69,7 @@ const Projects = () => {
       image: StolenBikesInvestigation,
     },
     {
-      id: 5,
+      id: 6,
       title: "Clothes Store | Men & Women",
       description: "An e-commerce platform for clothing.",
       link: "https://mystoreshopcart.vercel.app/",
@@ -68,7 +77,7 @@ const Projects = () => {
       image: ShopCarts,
     },
     {
-      id: 6,
+      id: 7,
       title: "Dashboard | Profile",
       description: "A personal dashboard for profile management.",
       link: "https://dashboardpresonal.vercel.app/",
@@ -76,7 +85,7 @@ const Projects = () => {
       image: ProfileDashboard,
     },
     {
-      id: 7,
+      id: 8,
       title: "Todo Application",
       description: "A simple and intuitive todo app.",
       link: "https://to-do-apptasks.vercel.app/",
@@ -84,7 +93,7 @@ const Projects = () => {
       image: TodoApp,
     },
     {
-      id: 8,
+      id: 9,
       title: "Modern Shopping | Light Store",
       description: "An e-commerce store for lighting products.",
       link: "https://light-store-modern.vercel.app/",
@@ -92,7 +101,7 @@ const Projects = () => {
       image: LightStore,
     },
     {
-      id: 9,
+      id: 10,
       title: "Art Cooperation",
       description: "A collaborative platform for artists.",
       link: "https://coperation-art.vercel.app/",
@@ -100,7 +109,7 @@ const Projects = () => {
       image: ArtCooperation,
     },
     {
-      id: 10,
+      id: 11,
       title: "Design Agency",
       description: "A portfolio website for a design agency.",
       link: "https://new-design-agency.vercel.app/",
@@ -108,7 +117,7 @@ const Projects = () => {
       image: DesignAgency,
     },
     {
-      id: 11,
+      id: 12,
       title: "Media Company",
       description: "A website for a global media company.",
       link: "https://media-company-world.vercel.app/",
@@ -116,7 +125,7 @@ const Projects = () => {
       image: MediaCompany,
     },
     {
-      id: 12,
+      id: 13,
       title: "Developing Company",
       description: "A website for a software development company.",
       link: "https://developer-area-com.vercel.app/",
@@ -124,7 +133,7 @@ const Projects = () => {
       image: DevelopingCompany,
     },
     {
-      id: 13,
+      id: 14,
       title: "Sales Company / UI-UX",
       description: "A UI/UX design for a sales company.",
       link: "https://www.figma.com/proto/dbRfOWUgS0aivxUxRBiRCe/design?node-id=15%3A324&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=15%3A324",
@@ -132,7 +141,7 @@ const Projects = () => {
       image: SalesCompanyUI,
     },
     {
-      id: 14,
+      id: 15,
       title: "Clothes Shop / UI-UX",
       description: "A UI/UX design for a clothing store.",
       link: "https://www.figma.com/proto/zzzSomNyeqCJrCooboAgy4/SHOP-REMOTE?node-id=2%3A2&starting-point-node-id=2%3A2",
@@ -140,7 +149,7 @@ const Projects = () => {
       image: ClothesShopUI,
     },
     {
-      id: 15,
+      id: 16,
       title: "Book Store Card / UI-UX",
       description: "A UI/UX design for a bookstore.",
       link: "https://www.figma.com/proto/b6pwNopLZRXauTUy9M5B6Q/VIDEO-2-TEST?node-id=10%3A24",
@@ -148,7 +157,7 @@ const Projects = () => {
       image: BookStoreCardUI,
     },
     {
-      id: 16,
+      id: 17,
       title: "Portfolio Design / UI-UX",
       description: "A UI/UX design for a portfolio website.",
       link: "https://www.figma.com/proto/IYPjr2NYksyaVpWIZQyDoH/VIDEO-1-TEST?node-id=0%3A5",
@@ -156,7 +165,7 @@ const Projects = () => {
       image: PortfolioDesignUI,
     },
     {
-      id: 17,
+      id: 18,
       title: "Online Courses Application / UI-UX",
       description: "A UI/UX design for an online course platform.",
       link: "https://www.figma.com/file/hajvYDGBNZ9z7kkUjyWHaV/OnlineCourseApplication?type=design&node-id=0%3A1&mode=design&t=2S1SaiNXYxayfAkB-1",
@@ -164,7 +173,7 @@ const Projects = () => {
       image: OnlineCoursesApp,
     },
     {
-      id: 18,
+      id: 19,
       title: "Designer Portfolio / UI-UX",
       description: "A UI/UX design for a designer's portfolio.",
       link: "https://www.figma.com/file/UH0aetbAhU8RM1rSbEVInx/DesignerPortfolio?type=design&node-id=0%3A1&mode=design&t=bAuyK4duEDUAi0Dl-1",
@@ -172,7 +181,7 @@ const Projects = () => {
       image: DesignerPortfolio,
     },
     {
-      id: 19,
+      id: 20,
       title: "Dribble - Designers Space / UI-UX",
       description: "A UI/UX design for a designer's community platform.",
       link: "https://www.figma.com/proto/2vcjhFuxBujlgvxyO1asWG/Dribbble?page-id=0%3A1&node-id=2-8&starting-point-node-id=2%3A8&mode=design&t=2gucn1UQejG2no7F-1",

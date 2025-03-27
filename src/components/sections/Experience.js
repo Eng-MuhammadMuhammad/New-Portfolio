@@ -7,6 +7,23 @@ const Experience = () => {
     {
       id: 1,
       role: "React Developer",
+      company: "TUV Tech",
+      duration: "April 2025 (1 Month, Completed)",
+      location: "Remote",
+      description:
+        "Developed a seamless shopping mobile online store, offering the latest trends, top-quality essentials, and unbeatable deals—all at your fingertips, anytime, anywhere!.",
+      skills: [
+        "React.js",
+        "E-commerce",
+        "UI/UX Design",
+        "Tailwind",
+        "JavaScript",
+        "Responsive Design",
+      ],
+    },
+    {
+      id: 2,
+      role: "React Developer",
       company: "Future Learn",
       duration: "March 2025 - April 2025 (1 Month, Completed)",
       location: "Remote",
@@ -23,7 +40,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       role: "React Developer & UI/UX Designer",
       company: "Employee-Task-Management-Platform",
       duration: "February 2025 - March 2025 (1 Month, Ongoing)",
@@ -41,7 +58,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       role: "UI/UX Designer & React.js Front-End Developer",
       company: "Modern Solutions",
       duration: "January 2025 - February 2025 (2 Weeks)",
@@ -59,7 +76,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       role: "React Frontend Developer & Layouts Designer (UI/UX)",
       company: "Stolen Bikes Investigation | SBI",
       duration: "December 2024 - January 2025 (1 Month)",
@@ -77,7 +94,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 5,
+      id: 6,
       role: "UI/UX Designer & Front-End Developer",
       company: "Modern Shopping | Light Store",
       duration: "August 2024 - October 2024 (2 Months)",
@@ -95,7 +112,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 6,
+      id: 7,
       role: "UI/UX Designer & Front-End Developer",
       company: "Todo Application",
       duration: "May 2024 - July 2024 (2 Months)",
@@ -104,7 +121,7 @@ const Experience = () => {
       skills: ["React.js", "UI/UX Design", "JavaScript", "CSS", "HTML"],
     },
     {
-      id: 7,
+      id: 8,
       role: "UI/UX Designer & Front-End Developer",
       company: "Clothes Store | Men & Women",
       duration: "January 2024 - April 2024 (4 Months)",
@@ -122,7 +139,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 8,
+      id: 9,
       role: "UI/UX Designer & Front-End Developer",
       company: "Innovative Syrian Solutions",
       duration: "July 2023 - December 2023 (6 Months)",
@@ -140,7 +157,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 9,
+      id: 10,
       role: "UI/UX Designer & Front-End Developer",
       company: "Syrian Tech Solutions",
       duration: "January 2023 - June 2023 (6 Months)",
@@ -157,7 +174,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 10,
+      id: 11,
       role: "UI/UX Designer & Front-End Developer",
       company: "NTT Data Business Solution",
       duration: "October 2022 - November 2023 (1 Year 1 Month)",
