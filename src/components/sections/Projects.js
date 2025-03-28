@@ -32,7 +32,7 @@ const Projects = () => {
     {
       id: 1,
       title: "Flights Bookig website",
-      description: "Modern and fasional webstore for Smart Mobile Phones",
+      description: "Wonderful and facinating website to book your flight",
       link: "https://skyway-flights.vercel.app/",
       category: "utility",
       image: SkyWay,
