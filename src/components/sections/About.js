@@ -20,23 +20,31 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pl-10 pr-10">
             <div className="order-2 md:order-1">
               <h3 className="text-2xl font-bold mb-4">
-                Software Engineer & UI/UX Designer
+                Software Engineer | React Developer | UI/UX Designer
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                I'm Mohammad Mohammad, a passionate Software Engineer
-                specializing in Web Development with React JS and UI/UX Design
-                using Figma. With over 2 years of experience, I've worked on a
-                variety of projects ranging from e-commerce platforms to task
-                management systems.
+                Mohammad Mohammad – As a Software Engineer specializing in
+                React.js, UI/UX Design (Figma), and WordPress Development, I
+                combine technical expertise with a designer’s eye to build fast,
+                scalable, and visually compelling web applications. With 2+
+                years of experience, I’ve developed e-commerce platforms, task
+                management systems, and custom WordPress solutions—focusing on
+                clean code, intuitive interfaces, and seamless user experiences.
               </p>
-              <p className="text-gray-600 dark:text-gray-300 mb-6">
-                I'm dedicated to creating clean, efficient, and user-friendly
-                web applications that provide exceptional user experiences. My
-                combined expertise in both development and design allows me to
-                bridge the gap between aesthetics and functionality.
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Proficient in React, Next.js, JavaScript/TypeScript, Tailwind
+                CSS, REST APIs, and PHP, I bridge the gap between frontend
+                development and UI/UX design, ensuring both functionality and
+                aesthetics align with modern standards. Currently pursuing a
+                Master’s in Web Science, I’m continuously expanding my skills in
+                performance optimization, accessibility, and emerging web
+                technologies to deliver cutting-edge digital solutions. Let’s
+                connect and create something great!
               </p>
+            </div>
 
-              <div className="grid grid-cols-2 gap-4">
+            <div className="order-1 md:order-2 flex justify-center">
+              <div className="grid grid-cols-2 gap-5">
                 <div className="flex items-center">
                   <FaUser className="text-primary mr-2" />
                   <span>
@@ -58,18 +66,8 @@ const About = () => {
                 <div className="flex items-center">
                   <FaUser className="text-primary mr-2" />
                   <span>
-                    <strong>Specialization:</strong> React JS, UI/UX
+                    <strong>Specialization:</strong> React.Js Developer
                   </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="order-1 md:order-2 flex justify-center">
-              <div className="w-64 h-64 md:w-80 md:h-80 bg-primary/20 rounded-full flex items-center justify-center">
-                <div className="w-60 h-60 md:w-72 md:h-72 bg-primary/30 rounded-full flex items-center justify-center">
-                  <div className="w-52 h-52 md:w-64 md:h-64 bg-primary text-white rounded-full flex items-center justify-center text-4xl font-bold">
-                    MM
-                  </div>
                 </div>
               </div>
             </div>
