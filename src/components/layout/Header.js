@@ -12,7 +12,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
 
   return (
     <header className="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md transition-colors duration-300">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-12">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link to="/">

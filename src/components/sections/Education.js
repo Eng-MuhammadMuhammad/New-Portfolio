@@ -34,7 +34,9 @@ const Education = () => {
           viewport={{ once: true }}
         >
           <div className="flex flex-col items-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2">Education</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center">
+              Education
+            </h2>
             <div className="w-20 h-1 bg-primary rounded"></div>
           </div>
 
@@ -54,18 +56,20 @@ const Education = () => {
               >
                 {/* Content box */}
                 <div
-                  className={`bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md w-full md:w-5/12 ${
+                  className={`bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md w-full md:w-5/12 text-center md:text-left ${
                     item.position === "right" ? "md:ml-auto" : "md:mr-auto"
                   }`}
                 >
                   <h3 className="text-xl font-semibold mb-4">{item.degree}</h3>
-                  <div className="flex items-center mb-2 text-gray-600 dark:text-gray-300">
-                    <FaUniversity className="mr-2 flex-shrink-0" />
-                    <span>
-                      {item.institution}, {item.location}
-                    </span>
+                  <div className="flex flex-col md:flex-row md:items-center mb-2 text-gray-600 dark:text-gray-300 justify-center md:justify-start">
+                    <div className="flex items-center justify-center md:justify-start">
+                      <FaUniversity className="mr-2 flex-shrink-0" />
+                      <span>
+                        {item.institution}, {item.location}
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex items-center text-gray-600 dark:text-gray-300">
+                  <div className="flex items-center text-gray-600 dark:text-gray-300 justify-center md:justify-start">
                     <FaCalendarAlt className="mr-2 flex-shrink-0" />
                     <span>{item.duration}</span>
                   </div>

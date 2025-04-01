@@ -90,13 +90,8 @@ const Experience = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          {/* <div className="flex flex-col items-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2">Professional Experience</h2>
-            <div className="w-20 h-1 bg-primary rounded"></div>
-          </div> */}
-
-          <div className="flex flex-col items-center text-center w-full mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2">
+          <div className="flex flex-col items-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center">
               Professional Experience
             </h2>
             <div className="w-20 h-1 bg-primary rounded"></div>
@@ -112,28 +107,28 @@ const Experience = () => {
                 viewport={{ once: true }}
                 className="mb-8"
               >
-                <div className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 relative border-l-4 border-primary">
+                <div className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 relative border-l-4 border-primary text-center md:text-left">
                   <h3 className="text-xl font-bold mb-1">{item.role}</h3>
                   <h4 className="text-lg font-semibold text-primary mb-2">
                     {item.company}
                   </h4>
 
-                  <div className="flex flex-wrap gap-4 mb-3 text-sm text-gray-600 dark:text-gray-300">
-                    <div className="flex items-center">
+                  <div className="flex flex-col md:flex-row md:flex-wrap gap-4 mb-3 text-sm text-gray-600 dark:text-gray-300 justify-center md:justify-start">
+                    <div className="flex items-center justify-center md:justify-start">
                       <FaCalendarAlt className="mr-2" />
                       <span>{item.duration}</span>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center justify-center md:justify-start">
                       <FaMapMarkerAlt className="mr-2" />
                       <span>{item.location}</span>
                     </div>
                   </div>
 
-                  <p className="mb-4 text-gray-600 dark:text-gray-300">
+                  <p className="mb-4 text-gray-600 dark:text-gray-300 text-center md:text-left">
                     {item.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                     {item.skills.map((skill, i) => (
                       <span
                         key={i}

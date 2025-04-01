@@ -17,17 +17,17 @@ const About = () => {
             <div className="w-20 h-1 bg-primary rounded"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pl-10 pr-10">
-            <div className="order-2 md:order-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4 md:px-10">
+            <div className="order-2 md:order-1 text-center md:text-left">
               <h3 className="text-2xl font-bold mb-4">
                 Software Engineer | React Developer | UI/UX Designer
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Mohammad Mohammad – As a Software Engineer specializing in
                 React.js, UI/UX Design (Figma), and WordPress Development, I
-                combine technical expertise with a designer’s eye to build fast,
+                combine technical expertise with a designer's eye to build fast,
                 scalable, and visually compelling web applications. With 2+
-                years of experience, I’ve developed e-commerce platforms, task
+                years of experience, I've developed e-commerce platforms, task
                 management systems, and custom WordPress solutions—focusing on
                 clean code, intuitive interfaces, and seamless user experiences.
               </p>
@@ -36,9 +36,9 @@ const About = () => {
                 CSS, REST APIs, and PHP, I bridge the gap between frontend
                 development and UI/UX design, ensuring both functionality and
                 aesthetics align with modern standards. Currently pursuing a
-                Master’s in Web Science, I’m continuously expanding my skills in
+                Master's in Web Science, I'm continuously expanding my skills in
                 performance optimization, accessibility, and emerging web
-                technologies to deliver cutting-edge digital solutions. Let’s
+                technologies to deliver cutting-edge digital solutions. Let's
                 connect and create something great!
               </p>
             </div>
