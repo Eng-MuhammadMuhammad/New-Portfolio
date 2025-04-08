@@ -65,7 +65,7 @@ const Projects = () => {
       id: 5,
       title: "ExpenseTrack",
       description: "An intuitive app for tracking personal finances.",
-      link: "https://modern-expensetrack.vercel.app/",
+      link: "https://expensesapptracker.netlify.app",
       category: "utility",
       image: ExpenseTrack,
     },
