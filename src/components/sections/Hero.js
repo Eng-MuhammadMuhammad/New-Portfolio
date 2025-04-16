@@ -1,10 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import {FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import React from "react";
+import { motion } from "framer-motion";
+import { FaLinkedin, FaEnvelope, FaFileAlt } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section id="hero" className="py-20 md:py-32 flex flex-col items-center justify-center text-center">
+    <section
+      id="hero"
+      className="py-20 md:py-32 flex flex-col items-center justify-center text-center"
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -18,39 +21,58 @@ const Hero = () => {
           Software Engineer | React Developer | UI/UX Designer
         </h2>
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-gray-600 dark:text-gray-300">
-          I create modern, responsive web applications with a focus on user experience and clean code.
-          With over 2 years of experience in web development and design.
+          I create modern, responsive web applications with a focus on user
+          experience and clean code. With over 2 years of experience in web
+          development and design.
         </p>
-        
+
         <div className="flex justify-center space-x-4 mb-8">
-          <a 
-            href="https://www.linkedin.com/in/muhammad-muhammad-217640173" 
-            target="_blank" 
+          <a
+            href="https://www.linkedin.com/in/muhammad-muhammad-217640173"
+            target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full transition-colors"
           >
             <FaLinkedin size={24} />
           </a>
-          <a 
+          <a
             href="mailto:muhammadhaidarmuhammad@gmail.com"
             className="bg-red-600 hover:bg-red-700 text-white p-3 rounded-full transition-colors"
           >
             <FaEnvelope size={24} />
           </a>
+          <a
+            href="https://drive.google.com/file/d/1zMhhjfzZmG1RpxIFoH_eLJG2-VV7RcHb/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-600 hover:bg-gray-700 text-white p-3 rounded-full transition-colors"
+            aria-label="View CV"
+          >
+            <FaFileAlt size={24} />
+          </a>
         </div>
-        
+
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a 
-            href="#contact" 
+          <a
+            href="#contact"
             className="bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 rounded-md transition-colors"
           >
             Contact Me
           </a>
-          <a 
-            href="#projects" 
+          <a
+            href="#projects"
             className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-medium py-3 px-8 rounded-md transition-colors"
           >
             View Projects
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1zMhhjfzZmG1RpxIFoH_eLJG2-VV7RcHb/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-600 hover:bg-gray-700 text-white font-medium py-3 px-8 rounded-md transition-colors flex items-center justify-center gap-2"
+          >
+            <FaFileAlt size={18} />
+            View CV
           </a>
         </div>
       </motion.div>
